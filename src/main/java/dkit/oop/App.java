@@ -36,7 +36,15 @@ public class App
         //Q3
 
         // write calls to methods implemented for Q3.
+        Airplane findByName1 = mgr.findAirplaneByPassengerName("Geronimo Stilton");
+        System.out.println(findByName1);
+        Airplane findByName2 = mgr.findAirplaneByPassengerName("Tom Hardy");
+        System.out.println(findByName2);
 
+        mgr.add(cargoPlane1);
+        mgr.add(cargoPlane2);
+        mgr.add(passengerPlane1);
+        mgr.add(passengerPlane2);
 
         //Question 4
         // Uncomment all the code below and implement the two methods

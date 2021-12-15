@@ -28,13 +28,31 @@ public class PassengerAirplane  extends Airplane{
                 '}' + super.toString();
     }
 
+    public int getMAX_NUM_PASSENGERS() {
+        return MAX_NUM_PASSENGERS;
+    }
+
+    public void setMAX_NUM_PASSENGERS(int MAX_NUM_PASSENGERS) {
+        this.MAX_NUM_PASSENGERS = MAX_NUM_PASSENGERS;
+    }
+
+    public ArrayList<String> getPassengerList() {
+        return passengerList;
+    }
+
+    public void setPassengerList(ArrayList<String> passengerList) {
+        this.passengerList = passengerList;
+    }
+
     public void addPassenger(String name) {
         if(passengerList.size() < MAX_NUM_PASSENGERS) {
             passengerList.add(name);
         }
         else{
-            System.out.println("Max number of passengers reached!");
+            System.out.println("No more space!!!");
         }
+
+
 
     }
 

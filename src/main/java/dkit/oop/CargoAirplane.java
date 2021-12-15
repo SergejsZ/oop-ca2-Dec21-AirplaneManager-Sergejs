@@ -25,4 +25,20 @@ public class CargoAirplane extends Airplane{
                 ", currentLoad=" + currentLoad +
                 '}';
     }
+
+    public int getMAX_LOAD_KILOS() {
+        return MAX_LOAD_KILOS;
+    }
+
+    public void setMAX_LOAD_KILOS(int MAX_LOAD_KILOS) {
+        this.MAX_LOAD_KILOS = MAX_LOAD_KILOS;
+    }
+
+    public int getCurrentLoad() {
+        return currentLoad;
+    }
+
+    public void setCurrentLoad(int currentLoad) {
+        this.currentLoad = currentLoad;
+    }
 } // END of CargoAirplane class.
